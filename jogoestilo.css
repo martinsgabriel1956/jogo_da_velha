@@ -1,0 +1,59 @@
+/*Tabela*/
+#titulo{
+    text-align: center;
+}
+
+#player1{
+    display: block;
+    border: 0px;
+}
+#player2{
+    display: block;
+    border: 0px;
+}
+
+#pagina_inicial{
+    margin: auto;
+}
+table, tbody, tr, td, input{
+    margin: auto;
+}
+
+.imgjogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+}
+
+/*Jogo*/
+#palco_jogo{
+    margin-top: 50px;
+    text-align: center;
+    display: none;
+}
+       
+.jogo_palco{
+    display: inline-block;
+}
+
+.jogada{
+    width: 100px;
+    height: 100px;
+}
+
+#bloco1, #bloco2, #bloco4, #bloco5{
+    border-bottom: solid 1px red;
+    border-right: solid 1px red;
+}
+
+#bloco3, #bloco6{
+    border-bottom: solid 1px red;
+}
+
+#bloco7, #bloco8{
+    border-right: solid 1px red;
+}
+#player1_jogo, #player2_jogo{
+    display: block;
+}

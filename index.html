@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="jogoestilo.css">
+</head>
+<body>
+    <div id="pagina_inicial">
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="3" id="titulo">JOGO DA VELHA</td>
+                </tr>
+                <tr>
+                    <td><img class="imgjogo" src="imagens/jogador_1.png">
+                    <input type="text" id="player1" maxlength="10" placeholder="Apelido Jogador 1"> <!--maxlength == pode escrever no máximo a quantidade de Caracteres escolhidos--> 
+                    </td>
+                    <td><img id="btn_iniciar_jogo" class="imgjogo" src="imagens/iniciar.png"></td>
+                    <td><img class="imgjogo" src="imagens/jogador_2.png">
+                    <input type="text" id="player2" maxlength="10" placeholder="Apelido Jogador 2">
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="palco_jogo">
+        <div class="jogo_palco">
+            <img src="imagens/jogador_1.png">
+            <span id="player1_jogo"></span>
+        </div>
+        <div class="jogo_palco">
+            <table border="0">
+                <tr>
+                    <td id="bloco1">
+                        <div id="a-1" class="jogada"></div>
+                    </td>
+                    <td id="bloco2">
+                        <div id="a-2" class="jogada"></div>
+                    </td>
+                    <td id="bloco3">
+                        <div id="a-3" class="jogada"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="bloco4">
+                        <div id="b-1" class="jogada"></div>
+                    </td>
+                    <td id="bloco5">
+                        <div id="b-2" class="jogada"></div>
+                    </td>
+                    <td id="bloco6">
+                        <div id="b-3" class="jogada"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="bloco7">
+                        <div id="c-1" class="jogada"></div>
+                    </td>
+                    <td id="bloco8">
+                        <div id="c-2" class="jogada"></div>
+                    </td>
+                    <td>
+                        <div id="c-3" class="jogada"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="jogo_palco">
+            <img src="imagens/jogador_2.png">
+            <span id="player2_jogo"></span>
+        </div>
+    </div>
+    
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jogo.js"></script>
+</body>
+</html>
